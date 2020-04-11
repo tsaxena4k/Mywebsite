@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css3/loginmain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>First Login Page</title>
+</head>
+<body>
+    <div class="container1">
+      <header>
+         <div class="header-image">
+	       <img src="images3/Header_image.png" alt="Header_image" height="110">
+         </div>
+	     <div class="header-menu">
+	       <ul>
+            <a href="#"><li><strong>Home</strong></li></a>
+            <a href="#"><li><strong>Services</strong></li></a>
+            <a href="#"><li><strong>Help</strong></li></a>
+            <a href="#"><li><strong>Contact</strong></li></a>
+	       </ul>
+           <a href="#"><i class="fas fa-bars" id="menubar"></i></a>
+	     </div>     
+      </header>  
+      <!--Body-->
+        <div class="login-bar">
+            <div id="login-signup">
+            <ul>
+             <a href="#"><li><i class='fas fa-user'></i>Login &vert;</li></a>
+             <a href="#"><li>Sign up</li></a>    
+            </ul>
+            </div>    
+        </div>
+       <div class="slideshow-container">
+           <div class="mySlides1">
+           <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+           </div>
+           
+           <div class="mySlides1">
+           <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+           </div>
+           
+           <div class="mySlides1">
+           <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+           </div>
+           
+           <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+      <!--Footer Starts here-->
+      <footer>
+          <h2 style="color:#0b94ba"><I>TSofficial</I></h2>
+          <hr>
+          <div class="footer-menus">
+            <div class="contact-box">
+                <p>This makes the div take as little space as possible, and its width is defined by the css.</p>  
+            </div>  
+            <div class="list1">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Help</li></a>
+                    <a href="#"><li>Noticeboard</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="list2">
+                <ul>
+                    <a href="#"><li>Discover</li></a>
+                    <a href="#"><li>Work</li></a>
+                    <a href="#"><li>Support</li></a>
+                    <a href="#"><li>Information</li></a>
+                    <a href="#"><li>Contribute</li></a>
+                </ul>
+            </div>  
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <div class="subscribe-bar">
+                    <input type="text" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <div class="social-nav">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>  
+          </div>
+          <hr>
+          <div class="copyright">
+              <p>&copy; Copyright reserved by <a href="#">TSofficial</a></p>
+              <div class="more-info">
+                <ul>
+                    <a href="#"><li>Terms & Conditions</li></a>
+                    <a href="#"><li>Our Policy</li></a>
+                    <a href="#"><li>Notices</li></a>
+                </ul>
+              </div>  
+          </div>  
+        </footer>   
+    </div>     
+    <script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

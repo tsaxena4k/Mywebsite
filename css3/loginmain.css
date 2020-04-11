@@ -1,0 +1,304 @@
+body{
+    font-family: Lato;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+i{
+    color:white;
+}
+.container1{
+    padding: 0px 200px 0px 200px;
+}
+/*header styliong starts*/
+header,.login-bar{
+    background: black;
+}
+.header-image{
+    display: inline-block; 
+    margin-left: 20px;
+}
+.header-menu{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+.header-menu ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 60px;
+}
+.header-menu ul li{
+    margin-left: 20px;
+    font-size: 20px;    
+}
+.header-menu ul a{
+    text-decoration: none;
+    color: #0b94ba;
+}
+.header-menu ul a:hover{
+    text-decoration: underline;
+}
+#menubar{
+    visibility: hidden;
+    color:#0b94ba;
+}
+.login-bar{
+    width: 100%;
+    background: black;
+    color: white;
+}
+#login-signup i{
+    margin-right: 10px;
+    margin-left: 
+}
+#login-signup ul{
+    list-style-type: none;
+    display: flex;
+    margin:2px;
+    padding-left: 20px;
+}
+#login-signup ul li{
+    margin: 5px 5px 5px 0px;
+}
+#login-signup ul a:hover{
+    text-decoration: underline;
+}
+/*header styling ends here*/
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/*footer styling starts here*/
+footer{
+    margin:0;
+    padding: 0;
+    color: white;
+    background: black;
+}
+footer h2{
+    padding: 10px 0px 0px 20px; 
+    margin: 10px;
+}
+.footer-menus{
+    padding: 10px 20px 0 20px
+}
+.contact-box{
+    display: inline-block;
+    width:10em;
+    margin-right: 10em
+}
+.list1,.list2{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 12em;
+    font-size: 20px;
+    position: relative;
+}
+.subscribe{
+    display: inline-block;
+    float: right;
+}
+.subscribe button:hover{
+    background: red;
+    color: white;
+}
+.list1 ul{
+    list-style-type: none;
+    margin-top:0px;
+    padding-left: 0;
+        
+}
+.list1 ul li{
+    margin-bottom: 4px
+}
+.list2 ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.list2 ul a:hover{
+    color: #0b94ba;
+}
+.list1 ul a:hover{
+    color: #0b94ba;
+}
+.list2 ul li{
+    margin-bottom: 4px;
+}
+.social-nav{
+    margin-top: 50px; 
+    font-size: 20px
+}
+.social-nav i{
+    margin-right: 20px;
+}
+.social-nav i:hover{
+    color: #0b94ba;
+}
+.copyright p{
+    display: inline-block;
+    margin:0px 0px 10px 20px;
+}
+.more-info{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+.more-info ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    margin:0
+}
+.more-info ul li{
+    margin-left: 15px;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+.more-info ul a:hover{
+    text-decoration: underline;
+}
+/*Media queries are here*/
+
+@media only screen and (max-width:1520px){
+    .list2{
+        width: 8em;
+    }
+    .contact-box{
+        width: 7em
+    }
+}
+@media only screen and (max-width:1390px){
+    .list1,.list2,.social-nav{
+        font-size: 15px;
+    }
+    .social-nav{
+        margin-top: 35px;
+    }
+}
+@media only screen and (max-width:1290px){
+    .list1,.list2,.contact-box{
+        width: 8em;
+    }
+    .contact-box{
+        margin-right: 8em;
+        font-size: 14px;
+    }
+    .social-nav{
+        margin-top: 20px;
+    }
+    .copyright{
+        font-size:13px;
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .list1,.list2,.subscribe,.contact-box,.social-nav{
+        font-size:12px;
+    }
+    .contact-box{
+        margin-right: 10em
+    }
+    .subscribe input{
+        height: 12px
+    }
+    .subscribe button{
+        height:20px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:1120px){
+    .list2{
+        width: auto
+    }
+    .contact-box{
+        margin-right: 4em
+    }
+    .subscribe input{
+        height: 10px
+    }
+    .subscribe button{
+        height: 17px;
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .container1{
+        padding: 0 150px 0 150px;
+    }
+    .header-menu ul{
+        display: none;
+    }
+    #menubar{
+        visibility: visible;
+        font-size:20px;
+        margin: 50px 20px 0px 0px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .container1{
+        padding: 0 50px 0 50px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .container1{
+        padding: 0px;
+    }
+    footer h2{
+        padding-left: 10px;
+    }
+    .contact-box{
+       margin-right: auto;
+    }
+    .list1,.list2{
+        display: none;
+    }
+    .subscribe input{
+        width: 10em
+    }
+    .social-nav{
+        margin-top: 10px;
+    }
+    .copyright{
+        width: auto;
+        font-size:9px;
+    }
+    .more-info ul li{
+        margin-left: 7px
+    }
+}
